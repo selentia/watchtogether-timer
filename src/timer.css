@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 14px;
+  width: 220px;
+
+  background: linear-gradient(180deg, #1b1e23, #14161a);
+  color: #eaeaf0;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#title {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #9aa4ff;
+  opacity: 0.85;
+}
+
+#time {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(154, 164, 255, 0.25);
+}
+
+#state {
+  font-size: 11px;
+  color: #b6bccf;
+  opacity: 0.9;
+}
+
+#state[data-state='playing'] {
+  color: #a5ffcf;
+}
+
+#state[data-state='paused'] {
+  color: #ffd28a;
+}
+
+#state[data-state='stale'] {
+  color: #9aa4ff;
+}
+
+#state[data-state='idle'] {
+  color: #b6bccf;
+}

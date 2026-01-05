@@ -1,0 +1,43 @@
+{
+  "name": "watchtogether-timer",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Chrome extension that displays a stable video playback timestamp to share time during watch-together sessions.",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsup",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest",
+    "test:ci": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selentia/watchtogether-timer.git"
+  },
+  "keywords": [
+    "chrome-extension",
+    "manifest-v3",
+    "watch-together",
+    "timer",
+    "video"
+  ],
+  "author": "selentia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/selentia/watchtogether-timer/issues"
+  },
+  "homepage": "https://github.com/selentia/watchtogether-timer#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.1.32",
+    "@vitest/coverage-v8": "^4.0.16",
+    "jsdom": "^27.4.0",
+    "rimraf": "^6.1.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  }
+}
